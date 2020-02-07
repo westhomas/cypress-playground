@@ -1,4 +1,11 @@
-/// <reference types="Cypress" />
+
+
+async function load(){
+    let {test_test_method} = await import("./testing.js")
+}
+
+load()
+
 
 context('Actions', () => {
   beforeEach(() => {
@@ -171,7 +178,7 @@ context('Actions', () => {
       .uncheck({ force: true }).should('not.be.checked')
   })
 
-  it('.select() - select an option in a <select> element', () => {
+  it('.select() - select an option in a select element', () => {
     // https://on.cypress.io/select
 
     // Select option(s) with matching text content

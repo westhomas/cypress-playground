@@ -4,7 +4,7 @@
   "description": "For testing cypress stuff.",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "DEBUG=cypress:webpack cypress open"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,12 @@
   "homepage": "https://github.com/westhomas/cypress-playground#readme",
   "dependencies": {
     "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
     "@cypress/webpack-preprocessor": "^4.1.1",
     "babel-loader": "^8.0.6",
     "cypress": "^3.4.1",

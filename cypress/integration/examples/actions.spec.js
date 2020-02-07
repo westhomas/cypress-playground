@@ -1,5 +1,17 @@
 
 
+
+// class properties test
+class Test{
+  static testClassProperty = "123"
+}
+
+// rest/spread test
+let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
+let n = { x, y, ...z };
+
+
+// dynamic import test
 async function load(){
     let {test_test_method} = await import("./testing.js")
 }

@@ -1,0 +1,22 @@
+{
+  "name": "cypress-playground",
+  "version": "1.0.0",
+  "description": "For testing cypress stuff.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westhomas/cypress-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/westhomas/cypress-playground/issues"
+  },
+  "homepage": "https://github.com/westhomas/cypress-playground#readme",
+  "dependencies": {
+    "cypress": "^3.4.1"
+  }
+}

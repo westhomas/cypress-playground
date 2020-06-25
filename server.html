@@ -1,0 +1,20 @@
+hello there!
+
+<!--<script src="https://code.jquery.com/jquery-3.5.1.js"></script>-->
+<script src="/jquery-2.0.3.js"></script>
+<script>
+    function click_handler() {
+        $.ajax({
+            url: "/enforce_origin",
+            data: { },
+            async: true,
+            xhrFields: {
+                withCredentials: true
+            }
+        })
+    }
+</script>
+
+<button onclick="click_handler()">
+    Post back to server!
+</button>

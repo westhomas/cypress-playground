@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/westhomas/cypress-playground.git"
   },
+  "settings": {
+    "apiUrl": "http://10.0.2.2:3001",
+    "allowedOrigin": "http://wes.decisio.work:3000"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -19,6 +23,7 @@
   },
   "homepage": "https://github.com/westhomas/cypress-playground#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "cypress": "^4.8.0",
     "express": "^4.17.1",
     "start-server-and-test": "^1.11.0"

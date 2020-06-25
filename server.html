@@ -1,3 +1,8 @@
+<html>
+<head>
+    <title>Test page.</title>
+</head>
+<body>
 hello there!
 
 <!--<script src="https://code.jquery.com/jquery-3.5.1.js"></script>-->
@@ -5,12 +10,23 @@ hello there!
 <script>
     function click_handler() {
         $.ajax({
-            url: "/enforce_origin",
-            data: { },
+            url: "{{ apiUrl }}/enforce_origin",
+            data: {},
             async: true,
             xhrFields: {
                 withCredentials: true
             }
+        }).done(function (dataSet, textStatus, xhr) {
+
+            console.debug(dataSet)
+            console.debug(textStatus)
+            console.debug(xhr)
+
+            $("#status").text("Success! Check console logs for details.")
+
+        }).fail(function (xhr) {
+            console.debug(xhr)
+            return null
         })
     }
 </script>
@@ -18,3 +34,6 @@ hello there!
 <button onclick="click_handler()">
     Post back to server!
 </button>
+<div id="status"></div>
+</body>
+</html>

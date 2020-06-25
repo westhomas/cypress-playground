@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/westhomas/cypress-playground#readme",
   "dependencies": {
-    "cypress": "^3.4.1"
+    "cypress": "^4.8.0"
   }
 }
